@@ -7,6 +7,10 @@
 // -- 3 digits, break into 2 digits, then 1 digit
 // consulting my dicttionary
 
+/**
+ *
+ */
+
 type Dict = Record<number, string>;
 
 const dictionary: Dict = {
