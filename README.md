@@ -43,12 +43,33 @@ npm test
   end
 ```
 
+| Emoji | Skill                    | Area of Knowledge     | Experience                      | Next Steps                      |
+| ----- | ------------------------ | --------------------- | ------------------------------- | ------------------------------- |
+| 💡    | Domain Knowledge         | Problem Domain        | Strong understanding            | - Explore alternative paradigms |
+| 🚀    | TypeScript               | Programming Languages | Proficient                      | - Simplify and enhance code     |
+| 🧠    | Programming Logic        | Algorithms & Logic    | Solid                           |                                 |
+| 📚    | Data Structures (Record) | Data Structures       | Effective use of `Record`       |                                 |
+| 🧵    | String Manipulation      | Text Processing       | Skillful in string manipulation |                                 |
+| 📝    | Code Best Practices      | Software Development  | Adherence to best practices     |                                 |
+| 🧪    | Unit Testing             | Software Testing      | Implemented unit tests          |                                 |
+
+### Experience
+
+- Demonstrates a strong foundation in converting numbers to text.
+- The procedural approach effectively handles different scenarios.
+
+### Next Steps
+
+- Explore alternative paradigms to simplify and enhance the code.
+
 ## Refactors:
 
 **Motivation**
 
 **Scope Change - Must correct the dictionary (to make my life easier):**
 https://www.dicio.com.br/setecentos-ou-setecentos/
+
+---
 
 **Original Code**: The initial code was a single function that converted numbers to text in Portuguese.
 
@@ -76,6 +97,8 @@ https://www.dicio.com.br/setecentos-ou-setecentos/
 
 **Improved Code**: Overall, the refactoring resulted in cleaner, more efficient, and maintainable code, making it easier to work with and extend in the future.
 
+---
+
 ### Number to PTBR - OO & Solid:
 
 I've made some improvements to the code, following concepts from well-known authors and programming principles:
@@ -87,6 +110,8 @@ I've made some improvements to the code, following concepts from well-known auth
 **Memory Efficiency**: To optimize _memory_ usage, I avoided unnecessary array creation and directly calculated tens and ones digits.
 
 **User-Friendly Design:** I aimed for _user-friendliness_ by allowing users to create an instance of _NumberToTextConverter_ and call the _convertToText_ method. This design, inspired by usability principles, enhances code readability and reusability.
+
+---
 
 ### Number to PTBR - Functional Programming:
 
