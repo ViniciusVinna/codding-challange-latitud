@@ -1,6 +1,24 @@
-# Numbers to Brazilian Portuguese
+<div align="center">
+  <p>
+    <img src="docs/latitud-logo.svg" alt="Latitud" width="550px" />
+    <h2>Challenge: Numbers to Brazilian Portuguese</h2>
+  </p>
+</div>
 
-An insightful overview of my quirky journey converting numbers into Brazilian Portuguese text
+# My Journey Converting Numbers into Brazilian Portuguese Text
+
+![Humor Level](https://img.shields.io/badge/Humor%20Level-Latin%20Drama-red)
+[![🧚 Hey! Listen to "Lose Yourself"!](https://img.shields.io/badge/🧚%20Hey!%20Listen%20to%20%22Lose%20Yourself%22%20on-Spotify-1DB954?logo=spotify)](https://open.spotify.com/track/7MJQ9Nfxzh8LPZ9e9u68Fq)
+
+An insightful overview of my quirky journey converting numbers into Brazilian Portuguese text.
+
+Given the challenge, I noticed the scope was fairly narrow. Rather than just providing a direct solution, I chose to showcase multiple approaches to demonstrate the breadth of my technical proficiency. This wasn't merely about coding, but highlighting my ability to view a problem from various angles and apply different programming paradigms. I believed this method effectively showcased the adaptability and versatility expected of a Staff Software Engineer, especially when faced with multifaceted challenges.
+
+> ## `If you had one shot, one opportunity` To impress a recruiter more senior than you've ever met, in one interview Would you capture it, or just let it slip?
+
+[To solve a simple challenge](https://gist.github.com/AlessandroFC15/ff5ca8cd4a1340260b661636229563a2)
+
+**I Choosed:**
 
 ```
 ██████╗ ██╗   ██╗███████╗██████╗ ███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███╗   ██╗███████╗██████╗
@@ -10,6 +28,20 @@ An insightful overview of my quirky journey converting numbers into Brazilian Po
 ╚██████╔╝ ╚████╔╝ ███████╗██║  ██║███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║██║ ╚████║███████╗██║  ██║
  ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
 ```
+
+![Humor Level](https://img.shields.io/badge/Humor%20Level-Latin%20Drama-red)
+[![🧚 Hey! Listen to "Numb"!](https://img.shields.io/badge/🧚%20Hey!%20Listen%20to%20%22Numb%22%20on-Spotify-1DB954?logo=spotify)](https://open.spotify.com/intl-pt/track/2nLtzopw4rPReszdYBJU6h?si=6538b2b7379b48b1)
+
+<details>
+  <summary><a href="https://img.shields.io/badge/🏆%20PlayStation-Achievement-003087?logo=playstation">
+🏆 Latitud Achievements</a></summary>
+
+[![Millennial Rock MTV](https://img.shields.io/badge/Millennial%20Rock-MTV-purple?logo=mtv)](https://www.youtube.com/watch?v=WC5FdFlUcl0)
+![Creativity 🎨](https://img.shields.io/badge/Creativity-🎨-FF0080)
+![Problem Solving 🧠](https://img.shields.io/badge/Problem%20Solving-🧠-FF0080)
+![Adaptability 🌀](https://img.shields.io/badge/Adaptability-🌀-FF0080)
+
+</details>
 
 ## Table of Contents
 
@@ -39,19 +71,24 @@ An insightful overview of my quirky journey converting numbers into Brazilian Po
 
 ## 🚀 Repository Initialization
 
+![Humor Level: Corporate](https://img.shields.io/badge/Humor%20Level-Corporate-0077B5?logo=linkedin)
+[![🧚 Hey! Listen to "For the Love of Money"!](https://img.shields.io/badge/🧚%20Hey!%20Listen%20to%20%22For%20the%20Love%20of%20Money%22%20on-Spotify-1DB954?logo=spotify)](https://open.spotify.com/intl-pt/track/3p1JoOEhVkEnTaa4JzTMSk?si=b704fe4a319d49c9)
+
 ```
 npm install
+npm run install
 ```
 
 ## 🧪 Run tests
 
 ```
 npm test
+npm run test
 ```
 
 ## 💡 Numbers to PTBR Conversion - Step 1 - Jared (Interviewer) and Vinna (Procedural Edition)
 
-- [Link to file](https://github.com/ViniciusVinna/codding-challange-latitud/blob/main/src/number-to-ptbr.ts)
+- [Link to original file](https://github.com/ViniciusVinna/codding-challange-latitud/blob/main/src/number-to-ptbr.ts)
 
 ### 📊 Problem Analysis
 
@@ -98,6 +135,21 @@ When tasked with the challenge of converting numbers to words, it became clear t
       OneDigit --> |> 20 and not divisible by 10| TensDigit
   end
 ```
+
+<details>
+  <summary><a href="https://img.shields.io/badge/🔥%20Survival%20Skills-gray?style=flat">
+🔥 Survival Skills</a></summary>
+
+- [![Decomposition](https://img.shields.io/badge/🔍%20Method-Decomposition-blue?style=flat)](#)
+- [![Pattern Analysis](https://img.shields.io/badge/🔁%20Method-Pattern%20Analysis-green?style=flat)](#)
+- [![Validation](https://img.shields.io/badge/✅%20Method-Validation-orange?style=flat)](#)
+- [![Digit Identification & Decomposition](https://img.shields.io/badge/🔢%20Method-Digit%20Identification%20&%20Decomposition-yellow?style=flat)](#)
+- [![Look-up](https://img.shields.io/badge/🔎%20Method-Look--up-red?style=flat)](#)
+- [![Conditional & Flow Control](https://img.shields.io/badge/🔄%20Method-Conditional%20&%20Flow%20Control-purple?style=flat)](#)
+- [![Conditional Decision](https://img.shields.io/badge/🔀%20Method-Conditional%20Decision-lightblue?style=flat)](#)
+- [![Data Structures (Dictionaries/Maps)](https://img.shields.io/badge/📖%20Method-Data%20Structures-gray?style=flat)](#)
+
+</details>
 
 ### 🎩 Skills Showcase
 
