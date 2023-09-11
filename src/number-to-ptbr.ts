@@ -48,7 +48,7 @@ const dictionary: Dict = {
   400: "quatrocentos",
   500: "quinhentos",
   600: "seiscentos",
-  700: "setessentos",
+  700: "setecentos",
   800: "oitocentos",
   900: "novecentos",
 };
