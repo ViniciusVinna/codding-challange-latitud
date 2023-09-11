@@ -367,6 +367,10 @@ NumberConverter --> Dictionary : uses
 | 🎨    | **Software Architecture Visualization** | Enhancing architectural representation              | 🌟 Commitment to clear software architecture visualization, facilitating effective communication |
 | 🎓    | **Practical Knowledge**                 | Continuous improvement through ongoing exploration  | 🌱 Demonstration of continuous learning and practical experience in skill development            |
 
+## 🌟 Bonus: Regex & Functional Programming
+
+- [Link to file](https://github.com/ViniciusVinna/codding-challange-latitud/blob/main/src/number-to-ptbr.regex.ts)
+
 ## 📚 My References
 
 | Author(s)                                                                                                                                          | RPG Class          | Emoji | Level (1-100) | Specialty Area                               |
