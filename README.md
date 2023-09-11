@@ -3,22 +3,33 @@
     <img src="docs/latitud-logo.svg" alt="Latitud" width="550px" />
     <h2>Challenge: Numbers to Brazilian Portuguese</h2>
   </p>
+
+  <p align="center">
+
+  ![Statements](./coverage/badge-statements.svg)
+  ![Branches](./coverage/badge-branches.svg)
+  ![Functions](./coverage/badge-functions.svg)
+  ![Lines](./coverage/badge-lines.svg)
+
+  </p>
 </div>
 
-# My Journey Converting Numbers into Brazilian Portuguese Text
+## My Journey Converting Numbers into Brazilian Portuguese Text
 
 ![Humor Level](https://img.shields.io/badge/Humor%20Level-Latin%20Drama-red)
 [![🧚 Hey! Listen to "Lose Yourself"!](https://img.shields.io/badge/🧚%20Hey!%20Listen%20to%20%22Lose%20Yourself%22%20on-Spotify-1DB954?logo=spotify)](https://open.spotify.com/track/7MJQ9Nfxzh8LPZ9e9u68Fq)
 
-An insightful overview of my quirky journey converting numbers into Brazilian Portuguese text.
+A laid-back look at my adventure converting numbers into Brazilian Portuguese text.
 
-Given the challenge, I noticed the scope was fairly narrow. Rather than just providing a direct solution, I chose to showcase multiple approaches to demonstrate the breadth of my technical proficiency. This wasn't merely about coding, but highlighting my ability to view a problem from various angles and apply different programming paradigms. I believed this method effectively showcased the adaptability and versatility expected of a Staff Software Engineer, especially when faced with multifaceted challenges.
+Faced with the challenge, I noticed the scope was quite specific. Instead of diving straight into a single solution, I decided to mix things up with a few different approaches. It wasn't just about slapping down code, but exploring various ways to tackle the issue. I hope this gives a glimpse into my adaptability, something I think is cool for a Software Engineer, especially when we bump into challenges of all shapes and sizes.
 
-> ## `If you had one shot, one opportunity` To impress a recruiter more senior than you've ever met, in one interview Would you capture it, or just let it slip?
+> ## __"If you had one shot, one opportunity"__
+> To showcase your skills during an interview, would you capture the moment, or just let it slip?
 
-[To solve a simple challenge](https://gist.github.com/AlessandroFC15/ff5ca8cd4a1340260b661636229563a2)
+[🎯 Original Challenge](https://gist.github.com/AlessandroFC15/ff5ca8cd4a1340260b661636229563a2)
 
-**I Choosed:**
+
+**So, why not:**
 
 ```
 ██████╗ ██╗   ██╗███████╗██████╗ ███████╗███╗   ██╗ ██████╗ ██╗███╗   ██╗███╗   ██╗███████╗██████╗
@@ -33,8 +44,11 @@ Given the challenge, I noticed the scope was fairly narrow. Rather than just pro
 [![🧚 Hey! Listen to "Numb"!](https://img.shields.io/badge/🧚%20Hey!%20Listen%20to%20%22Numb%22%20on-Spotify-1DB954?logo=spotify)](https://open.spotify.com/intl-pt/track/2nLtzopw4rPReszdYBJU6h?si=6538b2b7379b48b1)
 
 <details>
-  <summary><a href="https://img.shields.io/badge/🏆%20PlayStation-Achievement-003087?logo=playstation">
-🏆 Latitud Achievements</a></summary>
+  <summary>
+    <a href="https://img.shields.io/badge/🏆%20PlayStation-Achievement-003087?logo=playstation">🏆 Latitud Achievements</a>
+  </summary>
+
+List of achievements that Latitud gains by hiring me:
 
 [![Millennial Rock MTV](https://img.shields.io/badge/Millennial%20Rock-MTV-purple?logo=mtv)](https://www.youtube.com/watch?v=WC5FdFlUcl0)
 ![Creativity 🎨](https://img.shields.io/badge/Creativity-🎨-FF0080)
@@ -182,6 +196,7 @@ The initial code worked on the following premise:
 - Use conditional logic to map different number ranges to their corresponding text.
 
 ### ❗ Scope Change - Must correct the dictionary (to make my life easier)
+<img src="docs/referee-var.gif" align="right" alt="VAR" width="120" />
 
 - [Portuguese linguistic rule](https://www.dicio.com.br/setecentos-ou-setecentos/)
 - [Diff](https://github.com/ViniciusVinna/codding-challange-latitud/commit/2b4ecce2619d6e78c077efbb7264d6d186ef7c93#diff-9c48c39d3912cfe6fb6053a118fd8abdcca2ccd45ace49baacb0e7083b7c2233)
