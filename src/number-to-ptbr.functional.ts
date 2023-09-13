@@ -13,7 +13,7 @@ const isWithinRange = (min: number, max: number) => (num: number) => num >= min 
  * Checks if a number is a multiple of 10.
  *
  * @param {number} num - The number to be checked.
- * @returns {boolean} True if the number is a multiple of 10, otherwise false.
+ * @returns {boolean} True if the number is a multiple of 10; otherwise, false.
  */
 const isMultipleOfTen = (num: number) => num % 10 === 0;
 
@@ -25,10 +25,10 @@ const isMultipleOfTen = (num: number) => num % 10 === 0;
 const isHundred = isWithinRange(100, 999);
 
 /**
- * Converts a number to text, up to 99.
+ * Converts a number to its textual representation, up to 99.
  *
  * @param {number} num - The number to be converted.
- * @returns {string} The text representing the number.
+ * @returns {string} The textual representation of the number.
  */
 export const convertUpTo99 = (num: number): string =>
   num <= 20 || isMultipleOfTen(num)
@@ -36,10 +36,10 @@ export const convertUpTo99 = (num: number): string =>
     : `${dictionary[Math.floor(num / 10) * 10]} e ${dictionary[num % 10]}`;
 
 /**
- * Converts the hundreds of a number to text.
+ * Converts the hundreds part of a number to its textual representation.
  *
  * @param {number} digit - The number to be converted.
- * @returns {string} The text representing the hundreds of the number.
+ * @returns {string} The textual representation of the hundreds part of the number.
  */
 export const convertHundreds = (digit: number): string => {
   const hundredsDigit = Math.floor(digit / 100) * 100;
@@ -52,12 +52,11 @@ export const convertHundreds = (digit: number): string => {
   return `${dictionary[hundredsDigit]} e ${convertUpTo99(remainingDigits)}`;
 };
 
-
 /**
- * Converts a number to text.
+ * Converts a number to its textual representation.
  *
  * @param {number} digit - The number to be converted.
- * @returns {string} The text representing the number.
+ * @returns {string} The textual representation of the number.
  * @throws {Error} Throws an error if the number is out of the valid range (0-999).
  */
 export const convertToText = (digit: number): string => {
