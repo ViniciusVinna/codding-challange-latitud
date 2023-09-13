@@ -1,6 +1,6 @@
-type Dict = Record<number, string>;
+type NumbersDictionary = Record<number, string>;
 
-export const dictionary: Dict = {
+export const numberWords: NumbersDictionary = {
   0: "zero",
   1: "um",
   2: "dois",
