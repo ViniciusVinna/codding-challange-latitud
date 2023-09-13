@@ -1,16 +1,3 @@
-// input must be between 0 and 999
-// i must identify total digits
-// 1 digit: 0-9
-// 2 digits: 10-99
-// -- add different threatment for 10-19
-// 3 digits: 100-999
-// -- 3 digits, break into 2 digits, then 1 digit
-// consulting my dicttionary
-
-/**
- *
- */
-
 type Dict = Record<number, string>;
 
 const dictionary: Dict = {
@@ -54,37 +41,78 @@ const dictionary: Dict = {
 };
 
 export function myCoolFunction(digit: number): string {
-  if (digit < 0 || digit > 999) {
+  if (!isValidInput(digit)) {
     throw new Error("Invalid input");
   }
 
-  if (digit <= 20 || (digit <= 99 && digit % 10 === 0)) {
+  if (isSingleDigit(digit) || isSpecialCaseBetweenTenAndTwenty(digit)) {
     return dictionary[digit];
   }
 
-  if (digit <= 99) {
-    const tensDigit = Math.floor(digit / 10) * 10;
-    const onesDigit = digit % 10;
+  if (isDoubleDigit(digit)) {
+    const tensDigit = getTensDigit(digit);
+    const onesDigit = getOnesDigit(digit);
 
-    return dictionary[tensDigit] + " e " + dictionary[onesDigit];
+    return joinWords(dictionary[tensDigit], dictionary[onesDigit]);
   }
 
-  if (digit % 100 === 0) {
-    return dictionary[digit];
+  if (isTripleDigit(digit)) {
+    const hundredsDigit = getHundredsDigit(digit);
+    const remainingDigits = getRemainingDigits(digit);
+
+    if (remainingDigits <= 20 || isDoubleDigit(remainingDigits)) {
+      return joinWords(dictionary[hundredsDigit], dictionary[remainingDigits]);
+    } else {
+      const tensDigit = getTensDigit(remainingDigits);
+      const onesDigit = getOnesDigit(remainingDigits);
+
+      return joinWords(
+        dictionary[hundredsDigit],
+        dictionary[tensDigit],
+        dictionary[onesDigit]
+      );
+    }
   }
 
-  const hundredsDigit = Math.floor(digit / 100) * 100;
-  const remainingDigits = digit % 100;
+  throw new Error("Invalid input"); // This should not happen
+}
 
-  if (remainingDigits <= 20 || (remainingDigits <= 99 && remainingDigits % 10 === 0)) {
-    return dictionary[hundredsDigit] + " e " + dictionary[remainingDigits];
+function isValidInput(digit: number): boolean {
+  return digit >= 0 && digit <= 999;
+}
 
-  }
+function isSingleDigit(digit: number): boolean {
+  return digit >= 0 && digit <= 9;
+}
 
-  else {
-    const tensDigit = Math.floor(remainingDigits / 10) * 10;
-    const onesDigit = remainingDigits % 10;
+function isSpecialCaseBetweenTenAndTwenty(digit: number): boolean {
+  return digit >= 10 && digit <= 19;
+}
 
-    return dictionary[hundredsDigit] + " e " + dictionary[tensDigit] + " e " + dictionary[onesDigit];
-  }
+function isDoubleDigit(digit: number): boolean {
+  return digit >= 20 && digit <= 99;
+}
+
+function isTripleDigit(digit: number): boolean {
+  return digit >= 100 && digit <= 999;
+}
+
+function getTensDigit(digit: number): number {
+  return Math.floor(digit / 10) * 10;
+}
+
+function getOnesDigit(digit: number): number {
+  return digit % 10;
+}
+
+function getHundredsDigit(digit: number): number {
+  return Math.floor(digit / 100) * 100;
+}
+
+function getRemainingDigits(digit: number): number {
+  return digit % 100;
+}
+
+function joinWords(...words: string[]): string {
+  return words.filter(Boolean).join(" e ");
 }
